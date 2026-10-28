@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Login</title>
+</head>
+<body>
+    <!-- Page heading -->
+    <h2>Login</h2>
+
+    <!-- Login form: sends the data to the /login endpoint in app.js using a POST request -->
+    <form action="/login" method="POST">
+        <!-- The name attributes match what app.js reads from req.body (username, password) -->
+        <label for="username">Username</label><br>
+        <input type="text" name="username" id="username" size="20" required><br>
+        <label for="password">Password</label><br>
+        <input type="password" name="password" id="password" size="30" required><br>
+        <input type="submit" value="Login">
+    </form>
+</body>
+</html>
